@@ -1,0 +1,205 @@
+/*CSS on Desk/Tab*/
+.Content-tab-desk{
+    display:block;
+}
+.Content-mobile{
+    display:none;
+}
+/* general*/
+body{
+    margin: 0;
+}
+
+p{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+h2, h3, h4{
+    font-family: 'Comfortaa', cursive;
+}
+h1{
+    font-family: 'Staatliches', cursive;
+}
+h1{
+    font-size: 4vmax;
+}
+h2{
+    font-size: 3vmax;
+}
+/*header*/
+header{
+    background-image: url(/Images/Sunrise-City-Banner.png);
+    background-position: bottom;
+    background-size: cover;
+    height: 42vmax;
+}
+header > *{
+    margin: 0% 15% 0% 15%;
+}
+header img{
+    margin-top:3%;
+    float:left;
+    margin-left:15%;
+    height: 10vmax;
+    width: 15vmax;
+
+}
+header > nav.Content-tab-desk{
+    margin-top: 6%;
+    float: right;
+    margin-left:12%;
+   
+}
+nav.Content-Tab-Desk > a{
+    color: white;
+    text-decoration: none;
+    padding: 1vmax;
+    font-size: 20px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/*about section*/
+.abt{
+    margin: 0% 15% 0% 15%;
+    position: relative;
+    top: -20vmax;
+}
+.abt img{
+    position: absolute;
+    height: 18vmax;
+    margin-right: 10%;
+}
+.abt  div{
+    position: absolute;
+    background-color: rgba(89,89,89,.75);
+    height: 20vmax;
+    color: white;
+    width: 45vmax;
+    right: -.2vmax;
+}
+.abt h3{
+    margin: 10% 10% 5% 10%;
+    color:white;
+    font-size: 2vmax;
+}
+.abt p{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 0;
+    color: white;
+    font-size: 1.5vmax;
+    line-height: 1.8;
+}
+#abt > h1{
+    position: absolute;
+    font-size: 5vmax;
+    width: 100%;
+    text-align: center;
+    color: white;
+    top:-12vmax;
+}
+/*overview */
+.over{
+    margin: 3% 16% 0 16%;
+    text-align: center;
+    
+}
+.over p{
+    margin: 5% 15%;
+    font-size: 1.7vmax;
+    line-height: 1.8;
+}
+/*Portfolio*/
+.port{
+    background-color: eaeaea;
+    display: flex;
+    justify-content: center;
+}
+.port > a{
+    margin: 2vmax 1vmax;
+    background-size: cover;
+    width: 20vmax;
+    height: 15vmax;
+    text-align: center;
+    color: white;
+    font-family: 'Staatliches', cursive;
+    border-radius: 5px;
+}
+.port > a > h3{
+    position: relative;
+    font-size: 4vmax;
+    top: 1.5vmax;
+    font-family: 'Staatliches', cursive;
+}
+#cafe{
+    background-image: linear-gradient( rgba(255,255,255,0),rgba(89,89,89,1)), url(/Images/DC-Cafe-Button.png);  
+}
+#JM{
+    background-image: linear-gradient( rgba(255,255,255,0),rgba(89,89,89,1)), url(/Images/Jm-505-Button.png);
+}
+#China{
+    background-image: linear-gradient( rgba(255,255,255,0),rgba(89,89,89,1)), url(/Images/china-Town-Button.png);
+}
+.lin{
+    background-color: 3f3f3f;
+    margin-top: 0;
+}
+.lin > div{
+    margin: 0 16% 0 16%;
+    background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0),rgba(63,63,63,.95)),linear-gradient(to left, rgba(255,255,255,0), rgba(255,255,255,0),rgba(63,63,63,.95)), url(/Images/Night_city_Banner.png);
+    background-size: cover;
+    background-position: center;
+    height: 13.5vmax;
+    padding-top: 1vmax;
+}
+.lin h3{
+    color: white;
+    font-size: 2.5vmax;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+}
+.lin > div > div{
+    display:flex;
+    justify-content: center;
+}
+.lin > div > div > a{
+    border-radius: 50%;
+    font-size: 3vmax;
+    text-align: center;
+    margin-right: 2vmax;
+    margin-left: 2vmax;
+    margin-top: 1vmax;
+    padding:  1.5vmax;;
+    border: .3vmax solid white;
+    color: white;
+}
+.Linkd{
+    background-color: #0e76a8;
+}
+.Stack{
+    background-color: #F48024;
+}
+.Git{
+    background-color: #211F1F;
+}
+footer{
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: white;
+    padding: 1vmax;
+    font-size: 2vmax;
+    background-color: #212121;
+}
+/* CSS on Mobile */
+@Media screen and (Max-width: 480px){
+    .Content-mobile{
+        display:block;
+    }
+     .Content-tab-desk{
+        display:none;
+    }
+}
