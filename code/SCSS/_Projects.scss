@@ -1,0 +1,40 @@
+.center-page-proj{
+    max-width: 760px;
+    margin: auto;
+}
+.proj{
+    margin-left: 5%;
+}
+.projBox{
+    display:flex;
+    flex-direction: row;
+    background-color: $onyx;
+    margin: 5% 5%;
+    padding: 1em;
+    align-items: center;
+    justify-content: center;
+    p{
+        color: $plantinum;
+        width: 50%;
+        line-height: 1.5em;
+        font-size: 1em;
+        margin: 0 2.5%;
+        font-weight: 300;
+    }
+    a{
+        display:flex;
+        background-color: $plantinum;
+        width: 200px;
+        height: 25vh;
+        align-items: center;
+        justify-content: center; 
+        background-position: center;
+        background-size:cover;
+    }
+    .PJBX-1{
+        background-image: url("/Images/china-Town-Button.png");
+    }
+}
+@media only screen and (max-width: 960px){
+
+}

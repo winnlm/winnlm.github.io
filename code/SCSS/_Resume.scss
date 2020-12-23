@@ -1,0 +1,84 @@
+#resu-main{ 
+//    background: url(/Images/bg-left.svg) left, url(/Images/Resume-Bg-Right.svg) right;
+//    background-size: contain;
+//    background-repeat: no-repeat;
+//    .resu-info{
+//    display:grid;
+//    margin: 0;
+//    z-index: -10;
+//    height: 80vmin;
+//    }
+    .exp,.edu,.skill{
+        z-index: -1;
+        padding: 2em;
+    }
+}
+.resu-info{
+    display:grid;
+    grid-template-columns: repeat(10,10%);
+    grid-template-rows: auto;
+    line-height: 2em;
+    h2{
+        text-align: center;
+        margin-bottom: 4%
+    }
+    .exp-con,.edu-con{
+        div{
+            margin-bottom: 5%;
+        }
+    }
+    .exp{
+        display:flex;
+        justify-content: flex-end;
+        grid-row: 1/4;
+        grid-column: 1/7;
+        background-color: $onyx;
+        color: $plantinum;  
+    }
+    .edu{
+        display:flex;
+        justify-content: flex-end;
+        grid-row: 4/7;
+        grid-column: 1/7;
+        background-color: $plantinum;
+        color: $battleship-grey;
+    }
+    .skill{
+        display:flex;
+        justify-content: flex-start;
+        grid-row: 1/7;
+        grid-column: 7/13;
+        background-color: $battleship-grey;
+        color: #fff;
+    }
+
+}
+.skill{
+        .Desi,.Web,.Soft,.Data{
+            padding: 3%;
+            background-color: $eerie-black;
+            margin: 3%;  
+        }
+}
+.header-small{
+    height: 23vmin;
+}
+
+/*resu*/
+.temp{
+    height:30%;
+}
+
+.prof{
+    padding: 3% 0;;
+    div{
+        display:inline;
+        float:left;
+    }
+    h1{
+        margin-bottom: 3%;
+    }
+    img{
+        margin-left: 30%;
+    }
+}

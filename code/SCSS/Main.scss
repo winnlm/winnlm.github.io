@@ -1,0 +1,254 @@
+/*Imports*/
+
+/*Utilities*/
+@import 'Utilities';
+
+/*Resume page*/
+@import 'Resume';
+
+/*Project page*/
+@import 'Projects';
+
+/*Design Page*/
+@import 'Designs';
+
+/*Contact page*/
+@import'Contact';
+
+.Content-mobile{
+    display:none;
+}
+
+/*general*/
+*{
+    margin: 0;
+    padding: 0;
+}*
+h1{
+    font-family: $font-staat;
+    font-size: 3em;
+    font-weight: 100;
+}
+h2, h3, h4, h5{
+    font-family: $font-com;
+    font-weight: 100;
+}
+h2{
+    font-size:2em;
+}
+h3{
+    font-size: 1.5em;
+}
+h4{
+    font-size: 1.15em;
+}
+h5{
+    font-size: 1em;
+}
+p{
+    font-family: $font-open;
+    font-size: 1em;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-family: $font-open;
+    font-size: 1.25em;
+}
+.center-page{
+    max-width: 960px;
+    margin: auto;
+}
+
+
+/*header*/
+header{
+    background-image: url(/Images/Sunrise-City-Banner.png);
+    background-position: bottom;
+    background-size: cover;
+    
+    img{
+        margin-top:3%;
+        float:left;
+        height: 15vh;
+
+    }
+}
+nav.Content-tab-desk{
+        margin-top: 6%;
+        float: right;
+        margin-left:12%;
+
+        a{
+            padding: 1vmax;
+        }
+    }
+.main-page{
+    height: 60vmin;
+}
+/*about section*/
+
+.abt{
+    position: absolute;
+    top: 130px;
+    right: 10%;
+    left: 10%;
+    
+    .temp{
+       height: 100%;
+    }
+    
+    .container{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height: 30vh;
+    }
+  
+    .abt-text-box{
+        background-color: rgba(89,89,89,.75);
+        color: white;
+        padding: 1em;
+        max-width: 20em;
+        h3{
+            margin: .5em;
+        }
+        p{
+        margin: 0 5%;
+        color: white;
+        line-height: 1.5;
+        }
+        
+    }
+ 
+    h1{
+        margin-bottom: 3%;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+    }
+}
+//@media screen and (min-width: 900px){
+//    .abt{
+//        margin: 0 auto;
+//        width: 80%;
+//    }
+//    .abt-text{
+//        
+//    }
+//    .abt-img-box{
+//        
+//    }
+//}
+.MW-Logo{
+        background-size: contain;
+        max-height: 30vmin;
+    }
+/*overview */
+.over{
+    margin-top: 2%;
+    text-align: center;
+    
+    p{
+        margin: 3% 20%;
+        line-height: 1.8;
+    }
+}
+
+/*Portfolio*/
+.port{
+    background-color: eaeaea;
+    display: flex;
+    justify-content: center;
+    
+    a{
+        margin: 2vmax 1vmax;
+        background-size: cover;
+        width: 25vmin;
+        height: 20vmin;
+        text-align: center;
+        color: white;
+        border-radius: 5px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        
+        h3{
+            position: relative;
+            font-family: $font-staat;
+        }
+    }
+   
+}
+
+#cafe{
+    background-image: linear-gradient( rgba(255,255,255,0),rgba(89,89,89,1)), url(/Images/DC-Cafe-Button.png);  
+}
+#JM{
+    background-image: linear-gradient( rgba(255,255,255,0),rgba(89,89,89,1)), url(/Images/Jm-505-Button.png);
+}
+#China{
+    background-image: linear-gradient( rgba(255,255,255,0),rgba(89,89,89,1)), url(/Images/china-Town-Button.png);
+}
+/*links*/
+.lin{
+    background-color: #3f3f3f;
+    
+    .lin-container{
+        margin: 0 16% 0 16%;
+        background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0),rgba(63,63,63,1)),linear-gradient(to left, rgba(255,255,255,0), rgba(255,255,255,0),rgba(63,63,63,1)), url(/Images/Night_city_Banner.png);
+        background-size: cover;
+        background-position: center;
+        max-height: 10v;
+        padding-top: 1vmax;
+        padding-bottom: .5%;
+        
+        h3{
+            color: white;
+            font-family: $font-com;
+            text-align: center;
+            margin-bottom: 2%;
+        }
+        div{
+            display:flex;
+            justify-content: center;
+            
+            
+             a{
+                border-radius: 50%;
+                text-align: center;
+                margin: 1vmax;
+                padding:  1vmax;
+                font-size: 2em;
+                border: .3vmax solid white;
+              
+            }
+        }
+    }
+}
+
+.Linkd{
+    background-color: #0e76a8;
+}
+.Stack{
+    background-color: #F48024;
+}
+.Git{
+    background-color: #211F1F;
+}
+footer{
+    text-align: center;
+    color: white;
+    padding: 2vmax;
+    background-color: #212121;
+}
+
+// CSS on Mobile 
+@Media screen and (Max-width: 700px){
+    .Content-mobile{
+        display:block;
+    }
+     .Content-tab-desk{
+        display:none;
+    }
+}
