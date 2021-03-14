@@ -1,0 +1,86 @@
+.con-main{
+    background-color: rgba(255,255,255,.8); 
+    background-image: url("/Images/Jm_lunch.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    background-blend-mode: overlay;
+    
+
+}
+.con-main > div{
+    display:flex;
+    max-width: 800px;
+}
+.con-info{
+    width:40%;
+    margin-left: 5%;
+    h1{
+        margin: 15% 0;
+        text-align: center;
+    }
+    h3{
+        margin: 125px 0 10% 0;
+    }
+    span{
+        margin: 10% 0;
+
+        display: flex;
+        align-items: center;
+    }
+    h5{
+        display:inline;
+        margin-left: 5%;
+
+    }
+    #phone{
+        height: 50px;
+    }
+    
+    #email{
+        width: 50px;
+    }
+}
+.con-form{
+    background-color: $battleship-grey;
+    width: 45%;
+    height:600px;
+    margin-left: 10%;
+    form{
+        margin-top: 75px;
+        display:flex;
+        flex-direction: column;
+    }
+    input,textarea{
+        margin: 5% 8%;
+        font-family: $font-open;
+        color: $battleship-grey;
+        border-radius: 4px;
+        border: none;
+        font-size: 1em;
+        padding-left: 10px;
+        
+    }
+    input{
+        height:40px;
+    }
+    textarea{
+        height:150px;
+        resize: vertical;
+        max-height: 200px;
+        padding-top: 7px;
+    }
+    input::placeholder{
+        font-family: $font-open;
+        color: $battleship-grey;
+    }
+    #con-sub{
+        margin: 5% 20%;
+        height: 2.5em;
+        font-family: $font-com;
+        font-size: 1.2em;
+        border: 3px solid $plantinum;
+        color: $plantinum;
+        background-color: transparent;
+    }
+}

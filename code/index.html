@@ -2,13 +2,19 @@
 <html>
 <head>
     <title>M.W Home</title>
+    <!-- External style sheet-->
     <link rel="stylesheet" type="text/css" href="CSS/Style.css">
+    <!--Open sans font-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <!--Comfortaa font-->
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <!--Staatiches font-->
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <!--Font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <meta name="description"
-          content="Home page of M.W"/>
+          content="Home page of Martinluther winn(M.W)"/>
     <meta name="robots"
           content="nofollow"/>
     <meta http-equiv="author"
@@ -16,46 +22,52 @@
 </head>
 <body>
     <!--start of header-->
-    <header>
-        <a href="/Code/index.html">
+    <header class="main-page">
+        <div class="center-page">
+        <a href="/Code/index.html" class="MW-Logo">
             <img src="/Images/M.W-logo.png">
         </a>
         <!--start of nav(mobile)-->
         <button class="Content-mobile">
-            <h2 class="Content-mobile">Menu</h2>
-             <nav>
-                <a href="#abt">About</a>
+            <h2>Menu<i class="fa fa-bars"></i></h2>
+             <nav class="Sub-menu" >
+                <a href="#abt" class="Content-mobile">About</a>
                 <a href="#resu" class="Content-mobile">Resume</a>
                 <a href="#proj" class="Content-mobile">Projects</a>
                 <a href="#desi" class="Content-mobile">Designs</a>
-                <a href="#lin">Links</a>
+                <a href="#lin" class="Content-mobile">Links</a>
                 <a href="#cont" class="Content-mobile">Contact</a>
             </nav>
         </button>
         <!--end of nav(mobile)-->
         <!--start of nav(desktop)-->
-        <nav class="Content-tab-desk">
+        <nav id="Content-tab-desk">
             <a href="#abt">About</a>
             <a href="#port" >Portfolio</a>
             <a href="#lin">Links</a>
             <a href="/Code/HTML/Contact.html">Contact</a>
         </nav>
         <!--end of nav(desktop)-->
+        </div>
     </header>
     <!--end of header-->
     <!--Start of about-->
     <section id="abt" class="abt">
         <h1>Martin L Winn</h1>
-        <img src="/Images/Temporary-PFP.png" />
-        <div>
-            <h3>Hello World!</h3>
-            <p>My name is Martin Winn. I'm a 20 year old desinger/deverloper based in South Florida,and currently a Sophmore at Florida Atlantic University majoring in molecular biology and computer science.</p>
+        <div class="container ">
+            <div class="abt-img-box">
+             <img class="temp" src="/Images/Temporary-PFP.png" />
+            </div>
+            <div class="abt-text-box">
+                <h3>Hello World!</h3>
+                <p>My name is Martin Winn. I'm a 20 year old desinger/deverloper based in South Florida,and currently a Sophmore at Florida Atlantic University majoring in molecular biology and computer science.</p>
+            </div>
         </div>
         <hr class="Content-mobile">
     </section>
     <!--end of about-->
     <!--start of overview(Desktop)-->
-    <section id="Port" class="over"> 
+    <section id="Port" class="over center-page"> 
     <h2>Overview</h2>
     <p>This is where you can see my past, current, and future projects and designs aswell as my resume. This section of the website will increase with time.</p>
     </section>
@@ -203,7 +215,7 @@
         </form>
     </section>
     <!--end of Contact(Mobile)-->
-    <section class="port Content-tab-desk">
+    <section class="port" id="Content-tab-desk">
         <a href="HTML/Resume.html" id="Cafe">
             <h3>Resume</h3>
         </a>
@@ -217,7 +229,7 @@
     <!--end of overview(Desktop)-->
     <!--start of Links-->
     <section id="lin" class="lin">
-        <div>
+        <div class="lin-container">
             <h3>Links</h3>
             <div>
                 <a class="linkd fa fa-linkedin" href="https://www.linkedin.com/in/martin-winn-351228151/"></a>

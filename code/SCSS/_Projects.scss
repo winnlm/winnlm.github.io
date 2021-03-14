@@ -4,28 +4,29 @@
 }
 .proj{
     margin-left: 5%;
+    margin-top: 5%;
 }
 .projBox{
     display:flex;
     flex-direction: row;
     background-color: $onyx;
-    margin: 5% 5%;
+    margin: 5% 10%;
     padding: 1em;
     align-items: center;
-    justify-content: center;
     p{
         color: $plantinum;
-        width: 50%;
+        width: 60%;
         line-height: 1.5em;
         font-size: 1em;
-        margin: 0 2.5%;
         font-weight: 300;
+        margin: 5% ;
+
     }
     a{
         display:flex;
         background-color: $plantinum;
         width: 200px;
-        height: 25vh;
+        height: 185px;
         align-items: center;
         justify-content: center; 
         background-position: center;

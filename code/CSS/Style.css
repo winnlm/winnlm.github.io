@@ -1,205 +1,478 @@
-/*CSS on Desk/Tab*/
-.Content-tab-desk{
-    display:block;
-}
-.Content-mobile{
-    display:none;
-}
-/* general*/
-body{
-    margin: 0;
-}
+/*Imports*/
+/*Utilities*/
+/* Variables*/
+/*Resume page*/
+#resu-main .exp, #resu-main .edu, #resu-main .skill {
+  z-index: -1;
+  padding: 2em; }
 
-p{
-    font-family: 'Open Sans Condensed', sans-serif;
-}
-a{
-    text-decoration: none;
-}
-h2, h3, h4{
-    font-family: 'Comfortaa', cursive;
-}
-h1{
-    font-family: 'Staatliches', cursive;
-}
-h1{
-    font-size: 4vmax;
-}
-h2{
-    font-size: 3vmax;
-}
+.resu-info {
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: auto;
+  line-height: 2em; }
+  .resu-info h2 {
+    text-align: center;
+    margin-bottom: 4%; }
+  .resu-info .exp-con div, .resu-info .edu-con div {
+    margin-bottom: 5%; }
+  .resu-info .exp {
+    display: flex;
+    justify-content: flex-end;
+    grid-row: 1/4;
+    grid-column: 1/7;
+    background-color: #3F3F3F;
+    color: #EAEAEA; }
+  .resu-info .edu {
+    display: flex;
+    justify-content: flex-end;
+    grid-row: 4/7;
+    grid-column: 1/7;
+    background-color: #EAEAEA;
+    color: #898989; }
+  .resu-info .skill {
+    display: flex;
+    justify-content: flex-start;
+    grid-row: 1/7;
+    grid-column: 7/13;
+    background-color: #898989;
+    color: #fff; }
+
+.skill .Desi, .skill .Web, .skill .Soft, .skill .Data {
+  padding: 3%;
+  background-color: #212121;
+  margin: 3%; }
+
+.header-small {
+  height: 10em; }
+
+.prof {
+  padding: 5% 4%;
+  display: grid;
+  grid-template-columns: 33% auto 33%; }
+  .prof .prof-con {
+    grid-column: 1; }
+  .prof .prof-img {
+    grid-column: 3;
+    text-align: center; }
+  .prof h1 {
+    margin-bottom: 5%; }
+  .prof img {
+    width: 100%;
+    height: auto; }
+
+/*Project page*/
+.center-page-proj {
+  max-width: 760px;
+  margin: auto; }
+
+.proj {
+  margin-left: 5%;
+  margin-top: 5%; }
+
+.projBox {
+  display: flex;
+  flex-direction: row;
+  background-color: #3F3F3F;
+  margin: 5% 10%;
+  padding: 1em;
+  align-items: center; }
+  .projBox p {
+    color: #EAEAEA;
+    width: 60%;
+    line-height: 1.5em;
+    font-size: 1em;
+    font-weight: 300;
+    margin: 5%; }
+  .projBox a {
+    display: flex;
+    background-color: #EAEAEA;
+    width: 200px;
+    height: 185px;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover; }
+  .projBox .PJBX-1 {
+    background-image: url("/Images/china-Town-Button.png"); }
+
+/*Design Page*/
+h1 {
+  color: #212121; }
+
+.desi-main {
+  background-color: #3F3F3F; }
+  .desi-main .desi {
+    margin-left: 5%;
+    padding: 5% 0; }
+  .desi-main h3 {
+    color: #EAEAEA; }
+
+.box-grid {
+  margin: 0;
+  display: grid;
+  grid-gap: 2.5%;
+  grid-template-columns: repeat(10, minmax(40px, 60px));
+  grid-template-rows: repeat(10, 1fr);
+  height: 125vmin;
+  justify-content: center;
+  padding-bottom: 5%; }
+
+.box {
+  background-color: #212121;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center; }
+
+.box-1 {
+  grid-column: 1/4;
+  grid-row: 1/4;
+  background-image: url("/Images/Night_city_Banner.png"); }
+
+.box-2 {
+  grid-column: 4/8;
+  grid-row: 1/5; }
+
+.box-4 {
+  grid-column: 1/4;
+  grid-row: 4/7; }
+
+.box-5 {
+  grid-column: 4/11;
+  grid-row: 5/8; }
+
+.box-6 {
+  grid-column: 1/4;
+  grid-row: 7/11; }
+
+.box-7 {
+  grid-column: 4/8;
+  grid-row: 8/11; }
+
+.box-8 {
+  grid-column: 8/11;
+  grid-row: 1/5; }
+
+.box-10 {
+  grid-column: 8/11;
+  grid-row: 8/11; }
+
+/*Contact page*/
+.con-main {
+  background-color: rgba(255, 255, 255, 0.8);
+  background-image: url("/Images/Jm_lunch.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  background-blend-mode: overlay; }
+
+.con-main > div {
+  display: flex;
+  max-width: 800px; }
+
+.con-info {
+  width: 40%;
+  margin-left: 5%; }
+  .con-info h1 {
+    margin: 15% 0;
+    text-align: center; }
+  .con-info h3 {
+    margin: 125px 0 10% 0; }
+  .con-info span {
+    margin: 10% 0;
+    display: flex;
+    align-items: center; }
+  .con-info h5 {
+    display: inline;
+    margin-left: 5%; }
+  .con-info #phone {
+    height: 50px; }
+  .con-info #email {
+    width: 50px; }
+
+.con-form {
+  background-color: #898989;
+  width: 45%;
+  height: 600px;
+  margin-left: 10%; }
+  .con-form form {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column; }
+  .con-form input, .con-form textarea {
+    margin: 5% 8%;
+    font-family: "Open Sans Condensed", sans-serif;
+    color: #898989;
+    border-radius: 4px;
+    border: none;
+    font-size: 1em;
+    padding-left: 10px; }
+  .con-form input {
+    height: 40px; }
+  .con-form textarea {
+    height: 150px;
+    resize: vertical;
+    max-height: 200px;
+    padding-top: 7px; }
+  .con-form input::placeholder {
+    font-family: "Open Sans Condensed", sans-serif;
+    color: #898989; }
+  .con-form #con-sub {
+    margin: 5% 20%;
+    height: 2.5em;
+    font-family: "Comfortaa", cursive;
+    font-size: 1.2em;
+    border: 3px solid #EAEAEA;
+    color: #EAEAEA;
+    background-color: transparent; }
+
+.Content-mobile {
+  display: none; }
+
+/*general*/
+* {
+  margin: 0;
+  padding: 0; }
+
+*
+h1 {
+  font-family: "Staatliches", cursive;
+  font-size: 3em;
+  font-weight: 100; }
+
+h2, h3, h4, h5 {
+  font-family: "Comfortaa", cursive;
+  font-weight: 100; }
+
+h2 {
+  font-size: 2em; }
+
+h3 {
+  font-size: 1.5em; }
+
+h4 {
+  font-size: 1.15em; }
+
+h5 {
+  font-size: 1em; }
+
+p {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1em; }
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.25em; }
+
+.center-page {
+  max-width: 960px;
+  margin: auto; }
+
+.shadow {
+  -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.4); }
+
 /*header*/
-header{
-    background-image: url(/Images/Sunrise-City-Banner.png);
-    background-position: bottom;
-    background-size: cover;
-    height: 42vmax;
-}
-header > *{
-    margin: 0% 15% 0% 15%;
-}
-header img{
-    margin-top:3%;
-    float:left;
-    margin-left:15%;
-    height: 10vmax;
-    width: 15vmax;
+header {
+  background-image: url(/Images/Sunrise-City-Banner.png);
+  background-position: bottom;
+  background-size: cover; }
+  header img {
+    margin-top: 3%;
+    float: left;
+    height: 5em;
+    Margin-left: 3%; }
 
-}
-header > nav.Content-tab-desk{
-    margin-top: 6%;
-    float: right;
-    margin-left:12%;
-   
-}
-nav.Content-Tab-Desk > a{
-    color: white;
-    text-decoration: none;
-    padding: 1vmax;
-    font-size: 20px;
-    font-family: 'Open Sans Condensed', sans-serif;
-}
+nav.Content-tab-desk, nav#Content-tab-desk {
+  margin-top: 6%;
+  float: right;
+  margin-right: 3%; }
+  nav.Content-tab-desk a, nav#Content-tab-desk a {
+    padding: 1vmax; }
+
+.main-page {
+  height: 27em; }
 
 /*about section*/
-.abt{
-    margin: 0% 15% 0% 15%;
-    position: relative;
-    top: -20vmax;
-}
-.abt img{
-    position: absolute;
-    height: 18vmax;
-    margin-right: 10%;
-}
-.abt  div{
-    position: absolute;
-    background-color: rgba(89,89,89,.75);
-    height: 20vmax;
+.abt {
+  position: absolute;
+  top: 120px;
+  right: 10%;
+  left: 10%; }
+  .abt .temp {
+    width: 100%; }
+  .abt .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 13em; }
+  .abt .abt-img-box {
+    max-width: 15em; }
+  .abt .abt-text-box {
+    background-color: rgba(89, 89, 89, 0.75);
     color: white;
-    width: 45vmax;
-    right: -.2vmax;
-}
-.abt h3{
-    margin: 10% 10% 5% 10%;
-    color:white;
-    font-size: 2vmax;
-}
-.abt p{
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 0;
-    color: white;
-    font-size: 1.5vmax;
-    line-height: 1.8;
-}
-#abt > h1{
-    position: absolute;
-    font-size: 5vmax;
+    padding: 1em;
+    max-width: 20em; }
+    .abt .abt-text-box h3 {
+      margin: .5em; }
+    .abt .abt-text-box p {
+      margin: 0 5%;
+      color: white;
+      line-height: 1.5; }
+  .abt h1 {
+    margin-bottom: .5em;
     width: 100%;
     text-align: center;
-    color: white;
-    top:-12vmax;
-}
+    color: #fff; }
+
+.MW-Logo {
+  background-size: contain; }
+
 /*overview */
-.over{
-    margin: 3% 16% 0 16%;
-    text-align: center;
-    
-}
-.over p{
-    margin: 5% 15%;
-    font-size: 1.7vmax;
-    line-height: 1.8;
-}
+.over {
+  margin-top: 2%;
+  text-align: center; }
+  .over p {
+    margin: 3% 20%;
+    line-height: 1.8; }
+
 /*Portfolio*/
-.port{
-    background-color: eaeaea;
-    display: flex;
-    justify-content: center;
-}
-.port > a{
+.port {
+  background-color: eaeaea;
+  display: flex;
+  justify-content: center; }
+  .port a {
     margin: 2vmax 1vmax;
     background-size: cover;
-    width: 20vmax;
-    height: 15vmax;
+    width: 9em;
+    height: 7em;
     text-align: center;
     color: white;
-    font-family: 'Staatliches', cursive;
     border-radius: 5px;
-}
-.port > a > h3{
-    position: relative;
-    font-size: 4vmax;
-    top: 1.5vmax;
-    font-family: 'Staatliches', cursive;
-}
-#cafe{
-    background-image: linear-gradient( rgba(255,255,255,0),rgba(89,89,89,1)), url(/Images/DC-Cafe-Button.png);  
-}
-#JM{
-    background-image: linear-gradient( rgba(255,255,255,0),rgba(89,89,89,1)), url(/Images/Jm-505-Button.png);
-}
-#China{
-    background-image: linear-gradient( rgba(255,255,255,0),rgba(89,89,89,1)), url(/Images/china-Town-Button.png);
-}
-.lin{
-    background-color: 3f3f3f;
-    margin-top: 0;
-}
-.lin > div{
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .port a h3 {
+      position: relative;
+      font-family: "Staatliches", cursive; }
+
+#cafe {
+  background-image: linear-gradient(rgba(255, 255, 255, 0), #595959), url(/Images/DC-Cafe-Button.png); }
+
+#JM {
+  background-image: linear-gradient(rgba(255, 255, 255, 0), #595959), url(/Images/Jm-505-Button.png); }
+
+#China {
+  background-image: linear-gradient(rgba(255, 255, 255, 0), #595959), url(/Images/china-Town-Button.png); }
+
+/*links*/
+.lin {
+  background-color: #3f3f3f; }
+  .lin .lin-container {
     margin: 0 16% 0 16%;
-    background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0),rgba(63,63,63,.95)),linear-gradient(to left, rgba(255,255,255,0), rgba(255,255,255,0),rgba(63,63,63,.95)), url(/Images/Night_city_Banner.png);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #3f3f3f), linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #3f3f3f), url(/Images/Night_city_Banner.png);
     background-size: cover;
     background-position: center;
-    height: 13.5vmax;
+    max-height: 10v;
     padding-top: 1vmax;
-}
-.lin h3{
-    color: white;
-    font-size: 2.5vmax;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-family: 'Comfortaa', cursive;
-    text-align: center;
-}
-.lin > div > div{
-    display:flex;
-    justify-content: center;
-}
-.lin > div > div > a{
-    border-radius: 50%;
-    font-size: 3vmax;
-    text-align: center;
-    margin-right: 2vmax;
-    margin-left: 2vmax;
-    margin-top: 1vmax;
-    padding:  1.5vmax;;
-    border: .3vmax solid white;
-    color: white;
-}
-.Linkd{
-    background-color: #0e76a8;
-}
-.Stack{
-    background-color: #F48024;
-}
-.Git{
-    background-color: #211F1F;
-}
-footer{
-    text-align: center;
-    font-family: 'Open Sans Condensed', sans-serif;
-    color: white;
-    padding: 1vmax;
-    font-size: 2vmax;
+    padding-bottom: .5%; }
+    .lin .lin-container h3 {
+      color: white;
+      font-family: "Comfortaa", cursive;
+      text-align: center;
+      margin-bottom: 2%; }
+    .lin .lin-container div {
+      display: flex;
+      justify-content: center; }
+      .lin .lin-container div a {
+        border-radius: 50%;
+        text-align: center;
+        margin: 1vmax;
+        padding: 1vmax;
+        font-size: 2em;
+        border: .3vmax solid white; }
+
+.Linkd {
+  background-color: #0e76a8; }
+
+.Stack {
+  background-color: #F48024; }
+
+.Git {
+  background-color: #211F1F; }
+
+footer {
+  text-align: center;
+  color: white;
+  padding: 2vmax;
+  background-color: #212121; }
+
+@Media screen and (Max-width: 700px) {
+  .Content-mobile {
+    display: block; }
+  #Content-tab-desk {
+    display: none; } }
+
+button.Content-mobile {
+  margin: 10% 7% 0 0;
+  float: right;
+  background-color: transparent;
+  border: none; }
+  button.Content-mobile .Sub-menu {
+    display: none;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 750px;
+    width: 14em;
     background-color: #212121;
-}
-/* CSS on Mobile */
-@Media screen and (Max-width: 480px){
-    .Content-mobile{
-        display:block;
-    }
-     .Content-tab-desk{
-        display:none;
-    }
-}
+    overflow: auto;
+    z-index: 3; }
+  button.Content-mobile a {
+    margin: 25% 30%; }
+
+button.Content-mobile:focus-within .sub-menu {
+  display: block; }
+
+button.Content-mobile:focus-within {
+  position: fixed;
+  right: 160px; }
+
+@Media screen and (Max-width: 700px) {
+  img {
+    object-fit: cover; }
+  .abt {
+    position: relative;
+    top: -200px;
+    right: auto;
+    left: auto; }
+    .abt .container {
+      flex-direction: column;
+      max-height: none; }
+    .abt .abt-img-box {
+      width: 17em; }
+      .abt .abt-img-box .temp {
+        border-radius: 50%;
+        background-color: white;
+        border: 5px solid white; }
+    .abt .abt-text-box {
+      background-color: transparent;
+      color: #212121;
+      max-width: none; }
+      .abt .abt-text-box h3 {
+        text-align: center; }
+      .abt .abt-text-box p {
+        color: #212121; }
+    .abt hr {
+      border: 3px solid #212121;
+      background-color: #212121;
+      width: 60%;
+      margin: 50px auto 0 auto; }
+  .over p {
+    margin: 0; } }

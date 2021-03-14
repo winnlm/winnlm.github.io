@@ -2,6 +2,10 @@
 <html>
 <head>
     <title>Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/Code/CSS/Style.css">
     <meta name="description"
           content="Resume page"/>
     <meta name="robots"
@@ -11,102 +15,118 @@
 </head>
 <body>
     <!--start of header-->
-    <header>
-        <a href="/Code/index.html">
-            <img src=""/>
-        </a>
-        <nav>
-            <a href="/Code/index.html#abt">About</a>
-            <a href="/Code/index.html#port">Portfolio</a>
-            <a href="/Code/index.html#lin">Links</a>
-            <a href="">Contact</a>
-        </nav>
+    <header class="header-small">
+        <div class="center-page">
+            <a href="/Code/index.html">
+                <img src="/Images/M.W-logo.png"/>
+            </a>
+            <nav class="Content-tab-desk">
+                <a href="/Code/index.html#abt">About</a>
+                <a href="/Code/index.html#port">Portfolio</a>
+                <a href="/Code/index.html#lin">Links</a>
+                <a href="/Code/HTML/Contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
     <!--end of header-->
     <!--start of main-->
-    <main>
-        <section>
-            <div>
+    <main id="resu-main">
+        <div class="resu-container">
+        <section class="Prof center-page">
+            <div class="prof-con">
                 <h1>Martin L Winn</h1>
                 <h4>Designer/developer</h4>
             </div>
-            <div>
-                <img src=""/>
+            <div class="prof-img">
+                <img class="temp" src="/Images/Temporary-PFP.png"/>
             </div>
         </section>
-        <div> 
             <!--start of exerperience-->
-            <section>
-                <h3>Experience</h3>
-                <div>
-                    <h4>Application Developer Intern | JM Family Enterprises, Inc</h4>
-                    <h4>(05/2019-08/2019)</h4>
-                    <p>Developing enhancements, projects, and solving
-                    issues for SET (Southeastern Toyota.)</p>
-                </div>
-                <div>
-                    <h4>Research Programmer Intern | NOVA Southeastern University</h4>
-                    <h4>(08/2018-06/2019)</h4>
-                    <p>Scripting programs in MATLAB for the INIM (Institute
-                    for Neuro-Immune Medicine.)</p>
-                </div>
-            </section>
-            <!--end of experience-->
-            <!--start of education-->
-            <section>
-                <h3>Education</h3>
-                <div>
-                    <h4>Associates of Arts | Broward College</h4>
-                    <h4>(2019-2021)</h4>
-                    <p>Majoring in Computer Science/ Molecular Biology</p>
-                </div>
-                <div>
-                    <h4>High School Diploma | Atlantic Technical Highschool</h4>
-                    <h4>(2015-2019)</h4>
-                    <p>Programming applications in Python and Java. Using
-                    variations of SQL to define, manipulate and control
-                    databases.</p>
-                </div>
-            </section>
-            <!--end of education-->
-            <!--start of skills-->
-            <section>
-                <h3>Skills</h3>
-                <h4>Tools</h4>
-                <div>
-                     <div>
-                         <h4>UI/UX Design</h4>
-                         <hr>
-                         <h4>Web Development</h4>
-                         <hr>
-                         <h5>HTML5 &amp; CSS3 | Intermediate</h5>
-                         <h5>JavaScript | Intermediate</h5>
-                         <h5>PHP | Novice</h5>
-                         <h4>Software Development</h4>
-                         <hr>
-                         <h5>Java | Novice</h5>
-                         <h5>Python | Intermediate</h5>
-                         <h4>Database Development</h4>
-                         <hr>
-                         <h5>SQL/T-SQL/Pl-SQL | Intermediate</h5>
+            <div class="resu-info">
+                <section class="exp">
+                    <div class="margin-left exp-con">
+                        <h2>Experience</h2>
+                        <div>
+                            <h4>Application Developer Intern | JM Family Enterprises, Inc</h4>
+                            <h4>(05/2019-08/2019)</h4>
+                            <p>Developing enhancements, projects, and solving
+                            issues for SET (Southeastern Toyota.)</p>
+                        </div>
+                        <div>
+                            <h4>Research Programmer Intern | NOVA Southeastern University</h4>
+                            <h4>(08/2018-06/2019)</h4>
+                            <p>Scripting programs in MATLAB for the INIM (Institute
+                            for Neuro-Immune Medicine.)</p>
+                        </div>
                     </div>
-                    <div>
-                        <hr>
-                        <h5>krita</h5>
-                        <h5>Photoshop</h5>
-                        <h5>Intuos Pen &amp; Touch</h5>
-                        <hr>
-                        <h5>Brackets</h5>
-                        <h5>Visual Code Studio</h5>
-                        <hr>
-                        <h5>Visual Studio</h5>
-                        <hr>
-                        <h5>SSMS</h5>
-                        <h5>Oracle</h5>
+                </section>
+                <!--end of experience-->
+                <!--start of education-->
+                <section class="edu">
+                    <div class="margin-left edu-con">
+                        <h2>Education</h2>
+                        <div>
+                            <h4>Associates of Arts | Broward College</h4>
+                            <h4>(2019-2021)</h4>
+                            <p>Majoring in Computer Science/ Molecular Biology</p>
+                        </div>
+                        <div>
+                            <h4>High School Diploma | Atlantic Technical Highschool</h4>
+                            <h4>(2015-2019)</h4>
+                            <p>Programming applications in Python and Java. Using
+                            variations of SQL to define, manipulate and control
+                            databases.</p>
+                        </div>
                     </div>
-                </div>
-            </section>
-            <!--end of skills-->
+                </section>
+                <!--end of education-->
+                <!--start of skills-->
+                <section class="skill">
+                    <div class="margin-right">
+                        <h2>Skills</h2>
+                             <div class="Desi">
+                                 <h4>UI/UX Design</h4>
+                                 <hr>
+                                 <div class="desi-tools">
+                                    <h5>krita</h5>
+                                    <h5>Photoshop</h5>
+                                    <h5>Intuos Pen &amp; Touch</h5>
+                                 </div>
+                            </div>
+                            <div class="Web">
+                                <h4>Web Development</h4>
+                                <hr>
+                                <div class="Tools">    
+                                    <h5>HTML5 &amp; CSS3 | Intermediate</h5>
+                                    <h5>JavaScript | Intermediate</h5>
+                                    <h5>PHP | Novice</h5>
+                                    <h5>Brackets</h5>
+                                    <h5>Visual Code Studio</h5>
+                                </div>
+                            </div>
+                            <div class="Soft">
+                                 <h4>Software Development</h4>
+                                 <hr>
+                                 <div class="Tools">
+                                    <h5>Java | Novice</h5>
+                                    <h5>Python | Intermediate</h5>
+                                    <h5>Visual Studio</h5>
+                                 </div>
+                            </div>
+                            <div class="Data">
+                                <h4>Database Development</h4>
+                                <hr>
+                                <div class="Tools">
+                                    <h5>SQL/T-SQL/Pl-SQL | Intermediate</h5>
+                                    <h5>SSMS</h5>
+                                    <h5>Oracle</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--end of skills-->
+            </div>
         </div>
     </main>
      <!--end of main-->
