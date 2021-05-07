@@ -191,13 +191,22 @@ nav.Content-tab-desk, nav#Content-tab-desk{
 }
 
 #cafe{
-    background-image: linear-gradient( rgba(255,255,255,0),rgba(89,89,89,1)), url(/Images/DC-Cafe-Button.png);  
+    background-image: 
+        linear-gradient( rgba(255,255,255,0),
+        rgba(89,89,89,1)), 
+        url(/Images/DC-Cafe-Button.png);  
 }
 #JM{
-    background-image: linear-gradient( rgba(255,255,255,0),rgba(89,89,89,1)), url(/Images/Jm-505-Button.png);
+    background-image: 
+        linear-gradient(
+        rgba(255,255,255,0),
+        rgba(89,89,89,1)), 
+        url(/Images/Jm-505-Button.png);
 }
 #China{
-    background-image: linear-gradient( rgba(255,255,255,0),rgba(89,89,89,1)), url(/Images/china-Town-Button.png);
+    background-image: 
+        linear-gradient( rgba(255,255,255,0),
+        rgba(89,89,89,1)), url(/Images/china-Town-Button.png);
 }
 /*links*/
 .lin{
@@ -205,7 +214,12 @@ nav.Content-tab-desk, nav#Content-tab-desk{
     
     .lin-container{
         margin: 0 16% 0 16%;
-        background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0),rgba(63,63,63,1)),linear-gradient(to left, rgba(255,255,255,0), rgba(255,255,255,0),rgba(63,63,63,1)), url(/Images/Night_city_Banner.png);
+        background-image: linear-gradient(
+            to right, 
+            rgba(255,255,255,0), rgba(255,255,255,0),
+            rgba(63,63,63,1)),
+            linear-gradient(to left, rgba(255,255,255,0), rgba(255,255,255,0),
+            rgba(63,63,63,1)), url(/Images/Night_city_Banner.png);
         background-size: cover;
         background-position: center;
         max-height: 10v;
@@ -293,12 +307,13 @@ button.Content-mobile:focus-within {
     right: 160px;
 }
 @Media screen and (Max-width: 700px){
-    img{
+    img {
         object-fit: cover;
     }
     .abt{
         position: relative;
         top:-200px;
+        margin-bottom: -200px;
         right:auto;
         left:auto;
         .container{
@@ -314,9 +329,12 @@ button.Content-mobile:focus-within {
             }
         }
         .abt-text-box{
+            margin: auto;
+            width: 70%;
             background-color: transparent;
             color: $eerie-black;
             max-width: none;
+            text-align: center;
             h3{
                 text-align: center;
             }
@@ -325,15 +343,119 @@ button.Content-mobile:focus-within {
             }
         }
         hr{
-            border: 3px solid $eerie-black;
+            border: 2px solid $eerie-black;
             background-color: $eerie-black;
             width: 60%;
             margin: 50px auto 0 auto;
         }
     }
     .over{
+        margin: auto;
+        width: 70%;
+        h2{
+            margin-top: 60px;
+        }
         p{
-            margin:0;
+            margin: 5% 0 10% 0;
+            padding: 1em;
+        }
+    }
+    #resu{
+        div{
+            margin: auto;
+            width: 70%;
+        }
+        h3,h2{
+            text-align: center;
+            padding: 8% 0 4% 0;
+        }
+        h1{
+            font-family: $font-staat;
+            font-size: 4em;
+            text-align: center;
+            mix-blend-mode: screen;
+            background: 
+                linear-gradient(to right, rgba(255,255,255,1),
+                rgba(255,255,255,.6),
+                rgba(255,255,255,.1)),
+                linear-gradient(to left,
+                rgba(255,255,255,1),
+                rgba(255,255,255,.6),
+               rgba(255,255,255,.1));
+            padding: 10% 0;
+
+        }
+        .resu-title{
+            margin: 0 15%;
+            background: 
+                url("/images/DC-Cafe-Button.png");
+            background-position: bottom;
+
+        }
+        .exp{
+            background-color: $onyx;
+            color: $plantinum;
+      
+        }
+        .edu{
+            background-color: $plantinum;
+            color: $battleship-grey;
+        }
+        .exp,.edu {
+            div{
+                padding: 25px 0; 
+            }
+            h4,p{
+                padding:5px 0;
+            }
+          
+            h4:nth-child(2),p{
+                padding: 10px 0 10px 10px;
+            }
+        }
+        .skill{
+            background-color: $battleship-grey;
+            color: $plantinum;
+            padding-bottom: 5%;
+            h4:nth-child(2){
+                margin: auto;
+                width: 70%;
+                padding-right: 20%;
+                text-align: right;
+
+            }
+            .skill_container{
+                display:grid;
+                grid-template-columns: repeat(5,1fr);
+                grid-template-rows: repeat(4,120px);
+            }
+            .Skill_container div{
+                margin: 0;
+                width:auto;
+            }
+            .ui-mobile,.web-mobile,.soft-mobile,.data-mobile{
+                grid-column: 1/4;
+
+            }
+            .tools{
+                background-color: $plantinum;
+                color: $battleship-grey;
+                grid-column: 4/6;
+                padding: 10% 5% 5% 5%;
+                
+            }
+            .ui-mobile{
+                grid-row: 1;
+            }
+            .web-mobile{
+                grid-row: 2;
+            }
+            .soft-mobile{
+                grid-row: 3;
+            }
+            .data-mobile{
+                grid-row: 4;
+            }
         }
     }
 }

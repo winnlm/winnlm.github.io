@@ -450,6 +450,7 @@ button.Content-mobile:focus-within {
   .abt {
     position: relative;
     top: -200px;
+    margin-bottom: -200px;
     right: auto;
     left: auto; }
     .abt .container {
@@ -462,17 +463,86 @@ button.Content-mobile:focus-within {
         background-color: white;
         border: 5px solid white; }
     .abt .abt-text-box {
+      margin: auto;
+      width: 70%;
       background-color: transparent;
       color: #212121;
-      max-width: none; }
+      max-width: none;
+      text-align: center; }
       .abt .abt-text-box h3 {
         text-align: center; }
       .abt .abt-text-box p {
         color: #212121; }
     .abt hr {
-      border: 3px solid #212121;
+      border: 2px solid #212121;
       background-color: #212121;
       width: 60%;
       margin: 50px auto 0 auto; }
-  .over p {
-    margin: 0; } }
+  .over {
+    margin: auto;
+    width: 70%; }
+    .over h2 {
+      margin-top: 60px; }
+    .over p {
+      margin: 5% 0 10% 0;
+      padding: 1em; }
+  #resu div {
+    margin: auto;
+    width: 70%; }
+  #resu h3, #resu h2 {
+    text-align: center;
+    padding: 8% 0 4% 0; }
+  #resu h1 {
+    font-family: "Staatliches", cursive;
+    font-size: 4em;
+    text-align: center;
+    mix-blend-mode: screen;
+    background: linear-gradient(to right, white, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1)), linear-gradient(to left, white, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1));
+    padding: 10% 0; }
+  #resu .resu-title {
+    margin: 0 15%;
+    background: url("/images/DC-Cafe-Button.png");
+    background-position: bottom; }
+  #resu .exp {
+    background-color: #3F3F3F;
+    color: #EAEAEA; }
+  #resu .edu {
+    background-color: #EAEAEA;
+    color: #898989; }
+  #resu .exp div, #resu .edu div {
+    padding: 25px 0; }
+  #resu .exp h4, #resu .exp p, #resu .edu h4, #resu .edu p {
+    padding: 5px 0; }
+  #resu .exp h4:nth-child(2), #resu .exp p, #resu .edu h4:nth-child(2), #resu .edu p {
+    padding: 10px 0 10px 10px; }
+  #resu .skill {
+    background-color: #898989;
+    color: #EAEAEA;
+    padding-bottom: 5%; }
+    #resu .skill h4:nth-child(2) {
+      margin: auto;
+      width: 70%;
+      padding-right: 20%;
+      text-align: right; }
+    #resu .skill .skill_container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(4, 120px); }
+    #resu .skill .Skill_container div {
+      margin: 0;
+      width: auto; }
+    #resu .skill .ui-mobile, #resu .skill .web-mobile, #resu .skill .soft-mobile, #resu .skill .data-mobile {
+      grid-column: 1/4; }
+    #resu .skill .tools {
+      background-color: #EAEAEA;
+      color: #898989;
+      grid-column: 4/6;
+      padding: 10% 5% 5% 5%; }
+    #resu .skill .ui-mobile {
+      grid-row: 1; }
+    #resu .skill .web-mobile {
+      grid-row: 2; }
+    #resu .skill .soft-mobile {
+      grid-row: 3; }
+    #resu .skill .data-mobile {
+      grid-row: 4; } }
