@@ -72,7 +72,6 @@
 
 .projBox {
   display: flex;
-  flex-direction: row;
   background-color: #3F3F3F;
   margin: 5% 10%;
   padding: 1em;
@@ -445,6 +444,14 @@ button.Content-mobile:focus-within {
   right: 160px; }
 
 @Media screen and (Max-width: 700px) {
+  h1, h2 {
+    text-align: center; }
+  h1 {
+    font-size: 4em; }
+  h2 {
+    font-size: 3em; }
+  h3 {
+    font-size: 1.5em; }
   img {
     object-fit: cover; }
   .abt {
@@ -482,9 +489,10 @@ button.Content-mobile:focus-within {
     margin: auto;
     width: 70%; }
     .over h2 {
-      margin-top: 60px; }
+      margin-top: 60px;
+      font-size: 2em; }
     .over p {
-      margin: 5% 0 10% 0;
+      margin: 5% 0 15% 0;
       padding: 1em; }
   #resu div {
     margin: auto;
@@ -493,12 +501,9 @@ button.Content-mobile:focus-within {
     text-align: center;
     padding: 8% 0 4% 0; }
   #resu h1 {
-    font-family: "Staatliches", cursive;
-    font-size: 4em;
-    text-align: center;
     mix-blend-mode: screen;
-    background: linear-gradient(to right, white, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1)), linear-gradient(to left, white, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1));
-    padding: 10% 0; }
+    padding: 10% 0;
+    background: linear-gradient(to right, white, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1)), linear-gradient(to left, white, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1)); }
   #resu .resu-title {
     margin: 0 15%;
     background: url("/images/DC-Cafe-Button.png");
@@ -545,4 +550,40 @@ button.Content-mobile:focus-within {
     #resu .skill .soft-mobile {
       grid-row: 3; }
     #resu .skill .data-mobile {
-      grid-row: 4; } }
+      grid-row: 4; }
+  #proj h2 {
+    font-family: "Staatliches", cursive;
+    font-size: 3em;
+    padding: 7% 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7), white), url(/Images/jm%20505.jpg);
+    background-position: 60% 80%;
+    background-size: cover; }
+  #proj .proj-container {
+    margin: auto;
+    width: 70%; }
+    #proj .proj-container div {
+      display: flex;
+      position: relative;
+      margin: 5% 0; }
+  #proj img {
+    width: 200px;
+    height: 200px; }
+  #proj h4 {
+    top: 45%;
+    left: 37%;
+    position: absolute; }
+  #proj p {
+    display: flex;
+    align-self: center;
+    margin-left: 5%; }
+  #desi h2 {
+    padding: 7% 0;
+    font-family: "Staatliches", cursive;
+    font-size: 3em;
+    padding: 6% 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.5), white), linear-gradient(to bottom, white, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.25)), url("/Images/china_town.jpg");
+    background-position: 60% 35%;
+    background-size: cover; }
+  #desi div:first-child {
+    margin: auto;
+    width: 70%; } }
