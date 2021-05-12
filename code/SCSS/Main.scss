@@ -280,7 +280,9 @@ button.Content-mobile{
     float:right;
     background-color: transparent;
     border: none;
-    
+    h2{
+        font-size: 2em;
+    }
   
     .Sub-menu{
         display:none;
@@ -529,9 +531,76 @@ button.Content-mobile:focus-within {
             background-position: 60% 35%;
             background-size: cover;
         }
-        div:first-child{
+        .desi-gallery{
+            margin:5% auto;
+        
+            width: 90%;
+            display:flex;
+            flex-wrap: wrap;
+        }
+        .desi-column{
+            flex: 5%;
+            width: 50%;
+            padding: 0 5px;
+            
+        }
+        .desi-column img{
+            width: 100%; 
+            vertical-align: middle;
+            margin: 5px 0;
+    
+        }
+        @Media screen and (max-width: 600px) {
+            .desi-column{
+            flex: 100%;
+            width: 100%;
+            }
+        }
+    }
+    #cont{
+        background-color: $onyx;
+        color: $plantinum;
+        h2{
+            padding: 5% 0;
+            font-family: $font-staat;
+        }
+        form{
             margin: auto;
             width: 70%;
+            display:flex;
+            flex-direction: column;
+     
+        }
+        input{
+            margin-top: 10%;
+            height: 40px;
+            background-color: transparent;
+            color: $plantinum;
+            border:none;
+            border-bottom: 5px solid $plantinum;
+        }
+        input::placeholder{
+            font-family: $font-com;
+            font-size: 1.15em;
+            color: $plantinum;
+        }
+        h3{
+            font-weight: 100;
+            margin: 7% 0 5px 0;
+        }
+        textarea{
+            height: 120px;
+            resize: vertical;
+            max-height: 200px;
+            background-color: $plantinum;
+            color: $onyx;
+        }
+        .con-sub{
+            width: 30%;
+            margin: 5% auto;
+            border: 2px solid $plantinum;
+            border-radius: 10px 10px 10px 10px; 
+            
         }
     }
 }

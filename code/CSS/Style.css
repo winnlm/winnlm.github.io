@@ -422,6 +422,8 @@ button.Content-mobile {
   float: right;
   background-color: transparent;
   border: none; }
+  button.Content-mobile h2 {
+    font-size: 2em; }
   button.Content-mobile .Sub-menu {
     display: none;
     margin: 0;
@@ -584,6 +586,56 @@ button.Content-mobile:focus-within {
     background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.5), white), linear-gradient(to bottom, white, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.25)), url("/Images/china_town.jpg");
     background-position: 60% 35%;
     background-size: cover; }
-  #desi div:first-child {
-    margin: auto;
-    width: 70%; } }
+  #desi .desi-gallery {
+    margin: 5% auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap; }
+  #desi .desi-column {
+    flex: 5%;
+    width: 50%;
+    padding: 0 5px; }
+  #desi .desi-column img {
+    width: 100%;
+    vertical-align: middle;
+    margin: 5px 0; }
+  @Media screen and (max-width: 600px) {
+    #desi .desi-column {
+      flex: 100%;
+      width: 100%; } }
+  #cont {
+    background-color: #3F3F3F;
+    color: #EAEAEA; }
+    #cont h2 {
+      padding: 5% 0;
+      font-family: "Staatliches", cursive; }
+    #cont form {
+      margin: auto;
+      width: 70%;
+      display: flex;
+      flex-direction: column; }
+    #cont input {
+      margin-top: 10%;
+      height: 40px;
+      background-color: transparent;
+      color: #EAEAEA;
+      border: none;
+      border-bottom: 5px solid #EAEAEA; }
+    #cont input::placeholder {
+      font-family: "Comfortaa", cursive;
+      font-size: 1.15em;
+      color: #EAEAEA; }
+    #cont h3 {
+      font-weight: 100;
+      margin: 7% 0 5px 0; }
+    #cont textarea {
+      height: 120px;
+      resize: vertical;
+      max-height: 200px;
+      background-color: #EAEAEA;
+      color: #3F3F3F; }
+    #cont .con-sub {
+      width: 30%;
+      margin: 5% auto;
+      border: 2px solid #EAEAEA;
+      border-radius: 10px 10px 10px 10px; } }
